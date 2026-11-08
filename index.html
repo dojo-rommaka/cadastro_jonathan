@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Jonathan</title>
+    <meta
+      name="description"
+      content="Página de cadastro moderna e responsiva inspirada no vídeo indicado."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="brand-panel">
+        <div class="brand-badge">JS</div>
+        <div class="brand-copy">
+          <p class="eyebrow">Bem-vindo(a)</p>
+          <h1>Crie sua conta</h1>
+          <p class="lead">
+            Conecte-se com pessoas, descubra novidades e aproveite tudo o que a
+            plataforma pode oferecer.
+          </p>
+        </div>
+
+        <ul class="feature-list">
+          <li>
+            <span class="icon">✓</span>
+            Cadastro rápido em poucos segundos
+          </li>
+          <li>
+            <span class="icon">✓</span>
+            Interface moderna e responsiva
+          </li>
+          <li>
+            <span class="icon">✓</span>
+            Segurança e privacidade garantidas
+          </li>
+        </ul>
+      </div>
+
+      <main class="form-panel">
+        <div class="card">
+          <div class="card-header">
+            <p class="eyebrow accent">Cadastro</p>
+            <h2>Vamos começar</h2>
+          </div>
+
+          <form id="signupForm" novalidate>
+            <div class="field-row two-columns">
+              <label class="field">
+                <span>Nome</span>
+                <input type="text" name="firstName" placeholder="Seu nome" required />
+              </label>
+
+              <label class="field">
+                <span>Sobrenome</span>
+                <input type="text" name="lastName" placeholder="Seu sobrenome" required />
+              </label>
+            </div>
+
+            <label class="field">
+              <span>E-mail</span>
+              <input type="email" name="email" placeholder="seu@email.com" required />
+            </label>
+
+            <div class="field-row two-columns">
+              <label class="field">
+                <span>Senha</span>
+                <input type="password" name="password" placeholder="••••••••" required />
+              </label>
+
+              <label class="field">
+                <span>Confirmar senha</span>
+                <input type="password" name="confirmPassword" placeholder="Repita a senha" required />
+              </label>
+            </div>
+
+            <label class="checkbox">
+              <input type="checkbox" name="terms" required />
+              <span>Li e concordo com os termos de uso.</span>
+            </label>
+
+            <button type="submit" class="submit-btn">Criar conta</button>
+          </form>
+
+          <div class="login-link">
+            Já possui uma conta?
+            <a href="#">Entrar</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" aria-live="polite">
+      Cadastro realizado com sucesso!
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
